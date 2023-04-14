@@ -9,7 +9,7 @@ main {
 .main-wrapper {
   position: absolute;
   padding: 30px;
-  animation: article-load 1000ms ease-in 800ms;
+  animation: article-load 1000ms ease-in 300ms;
   animation-fill-mode: forwards;
   transform: translateX(-1000%);
 }

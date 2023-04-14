@@ -58,13 +58,14 @@ const Intro = () => {
             <FaFacebook />
           </a>
 
-          <div className="vl" id="link"></div>
+          <div className="vl"></div>
         </div>
       </div>
-      <a href="#link" className="btn-down">
+      <a href="#link2" className="btn-down">
         <MdOutlineArrowForwardIos />
       </a>
-      <div className="curve">
+
+      <div id="link2" className="curve">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"

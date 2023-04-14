@@ -23,7 +23,7 @@ const About = () => {
         value < 670 ? (value - 400) * 0.6 + "px" : "140px";
     } else if (windowSize > 1470) {
       document.querySelector(".about-title").style.left =
-        value < 670 ? (value - 300) * 0.4 + "px" : "140px";
+        value < 670 ? (value - 300) * 0.4 + "px" : "130px";
     } else if (windowSize > 1240) {
       document.querySelector(".about-title").style.left =
         value < 640 ? (value - 300) * 0.2 + "px" : "60px";
@@ -33,6 +33,7 @@ const About = () => {
   });
   return (
     <section className="about">
+      <div id="link"></div>
       <h2 className="about-title">About me</h2>
       <div className="text-wrap">
         <p>
