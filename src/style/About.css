@@ -1,0 +1,139 @@
+.about {
+  background-color: rgb(236, 236, 236);
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 120px 15vw;
+  overflow: hidden;
+}
+
+.about h2 {
+  position: absolute;
+  margin: 0;
+  font-size: 450px;
+  text-transform: uppercase;
+  color: rgb(221, 221, 221);
+  /* top: -40px; */
+  top: -70px;
+}
+
+.about .text-wrap {
+  margin-top: 50px;
+  z-index: 5;
+}
+
+.about p {
+  max-width: 700px;
+  font-weight: 500;
+  font-size: 20px;
+  z-index: 2;
+}
+
+.curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.curve svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 120px;
+}
+
+.curve .shape-fill {
+  fill: rgb(236, 236, 236);
+}
+
+@media (max-width: 2320px) {
+  .about h2 {
+    font-size: 350px;
+  }
+}
+
+@media (max-width: 1830px) {
+  .about h2 {
+    font-size: 280px;
+    top: 20px;
+  }
+}
+
+@media (max-width: 1690px) {
+  .about h2 {
+    font-size: 270px;
+  }
+
+  .about {
+    padding: 120px 10vw;
+  }
+}
+
+@media (max-width: 1360px) {
+  .about h2 {
+    font-size: 210px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .about {
+    padding: 0;
+  }
+  .about h2 {
+    font-size: 120px;
+    position: static;
+    margin-top: 40px;
+    color: rgb(170, 170, 170);
+  }
+
+  .about .text-wrap {
+    margin-top: 15px;
+    text-align: justify;
+    padding: 0 30px;
+    margin-bottom: 40px;
+  }
+
+  .curve {
+    display: none;
+  }
+
+  a.btn-down {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .about h2 {
+    font-size: 90px;
+  }
+
+  .about p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about h2 {
+    font-size: 70px;
+    padding: 0 30px;
+  }
+
+  .about p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about h2 {
+    font-size: 50px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+}
