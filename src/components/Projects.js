@@ -1,7 +1,7 @@
 import React from "react";
 import ecommerce from "../assets/ecommerce.jpg";
-import player from "../assets/musicplayer.png";
-import weather from "../assets/weather.png";
+import player from "../assets/musicplayer.jpg";
+import weather from "../assets/weather.jpg";
 import { FaGithub } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
@@ -27,35 +27,6 @@ const Projects = () => {
             <label htmlFor="s1" id="slide1">
               <div className="card">
                 <div className="image">
-                  <img src={ecommerce} alt="website" />
-                </div>
-                <div className="infos">
-                  <h3 className="name">E-commerse website</h3>
-                  <p className="website-description">
-                    It is an online store that allows buyers to browse through
-                    multiple categories and add products to cart.
-                  </p>
-                  <div className="tech">
-                    <span>REACT</span>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                  </div>
-                  <a target="blank" href="https://furninatur.netlify.app/">
-                    Live
-                  </a>
-                  <a
-                    target="blank"
-                    href="https://github.com/Dovile234/ecommerce-website.git"
-                  >
-                    Code
-                  </a>
-                </div>
-              </div>
-            </label>
-
-            <label htmlFor="s2" id="slide2">
-              <div className="card">
-                <div className="image">
                   <img src={player} alt="website" />
                 </div>
                 <div className="infos">
@@ -76,6 +47,34 @@ const Projects = () => {
                   <a
                     target="blank"
                     href="https://github.com/Dovile234/music-player.git"
+                  >
+                    Code
+                  </a>
+                </div>
+              </div>
+            </label>
+            <label htmlFor="s2" id="slide2">
+              <div className="card">
+                <div className="image">
+                  <img src={ecommerce} alt="website" />
+                </div>
+                <div className="infos">
+                  <h3 className="name">E-commerse website</h3>
+                  <p className="website-description">
+                    It is an online store that allows buyers to browse through
+                    multiple categories and add products to cart.
+                  </p>
+                  <div className="tech">
+                    <span>REACT</span>
+                    <span>HTML</span>
+                    <span>CSS</span>
+                  </div>
+                  <a target="blank" href="https://furninatur.netlify.app/">
+                    Live
+                  </a>
+                  <a
+                    target="blank"
+                    href="https://github.com/Dovile234/ecommerce-website.git"
                   >
                     Code
                   </a>
