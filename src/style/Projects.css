@@ -212,6 +212,13 @@ input {
   display: none;
 }
 
+@media (max-width: 1700px) {
+  .card .infos {
+    max-width: 400px;
+    left: -500px;
+  }
+}
+
 @media (max-width: 1550px) {
   .projects-wrap {
     margin-top: 40px;
@@ -228,6 +235,12 @@ input {
 
   .website-description {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .card .infos {
+    left: -430px;
   }
 }
 
