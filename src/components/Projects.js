@@ -4,14 +4,27 @@ import player from "../assets/musicplayer.jpg";
 import weather from "../assets/weather.jpg";
 import { FaGithub } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowUpRightFromSquare,
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Projects = () => {
+  const scrollRightHandler = () => {
+    document.querySelector(".projects-wrap-mobile").scrollLeft +=
+      window.innerWidth;
+  };
+  const scrollLeftHandler = () => {
+    document.querySelector(".projects-wrap-mobile").scrollLeft -=
+      window.innerWidth;
+  };
   return (
     <div className="projects-container">
-      <h2>My Recent Work</h2>
+      <div id="projects"></div>
+      <h2 className="projects-title">My Recent Work</h2>
       <div className="projects-wrap">
-        <div className="container" id="projects">
+        <div className="container">
           <input
             type="radio"
             name="slider"
@@ -117,6 +130,102 @@ const Projects = () => {
                 </div>
               </div>
             </label>
+          </div>
+        </div>
+      </div>
+
+      <div className="arrow-btn">
+        <FontAwesomeIcon
+          icon={faChevronLeft}
+          id="left"
+          onClick={scrollLeftHandler}
+        />
+        <FontAwesomeIcon
+          icon={faChevronRight}
+          id="right"
+          onClick={scrollRightHandler}
+        />
+      </div>
+      <div className="projects-wrap-mobile">
+        <div className="mobile-card">
+          <img src={player} alt="website" />
+          <div className="infos">
+            <h3 className="name">Music Player</h3>
+            <p className="website-description">
+              This is a web aplication, that lets users play music, browse
+              through multiple music genres and add favorite songs to their
+              playlist. Favorites list was made using local storage.
+            </p>
+            <div className="tech">
+              <span>REACT</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <div className="link-btns">
+              <a target="blank" href="https://tuneflow.netlify.app/">
+                Live
+              </a>
+              <a
+                target="blank"
+                href="https://github.com/Dovile234/music-player.git"
+              >
+                Code
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="mobile-card">
+          <img src={ecommerce} alt="website" />
+          <div className="infos">
+            <h3 className="name">Music Player</h3>
+            <p className="website-description">
+              This is a web aplication, that lets users play music, browse
+              through multiple music genres and add favorite songs to their
+              playlist. Favorites list was made using local storage.
+            </p>
+            <div className="tech">
+              <span>REACT</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <div className="link-btns">
+              <a target="blank" href="https://tuneflow.netlify.app/">
+                Live
+              </a>
+              <a
+                target="blank"
+                href="https://github.com/Dovile234/music-player.git"
+              >
+                Code
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="mobile-card">
+          <img src={weather} alt="website" />
+          <div className="infos">
+            <h3 className="name">Music Player</h3>
+            <p className="website-description">
+              This is a web aplication, that lets users play music, browse
+              through multiple music genres and add favorite songs to their
+              playlist. Favorites list was made using local storage.
+            </p>
+            <div className="tech">
+              <span>REACT</span>
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+            <div className="link-btns">
+              <a target="blank" href="https://tuneflow.netlify.app/">
+                Live
+              </a>
+              <a
+                target="blank"
+                href="https://github.com/Dovile234/music-player.git"
+              >
+                Code
+              </a>
+            </div>
           </div>
         </div>
       </div>

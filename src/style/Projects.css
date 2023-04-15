@@ -1,4 +1,4 @@
-.projects-container h2 {
+.projects-title {
   font-size: 50px;
   text-transform: uppercase;
   text-align: center;
@@ -6,6 +6,16 @@
   margin: 0 auto;
   padding: 60px 0 40px;
   color: rgb(209, 209, 209);
+  transform: translateX(-400%);
+  transition: transform 0.5s ease;
+}
+
+.projects-title.show {
+  transform: translateX(0);
+}
+
+.arrow-btn {
+  display: none;
 }
 
 .projects-container {
@@ -161,7 +171,7 @@ input {
 #s3:checked ~ .cards #slide2,
 #s4:checked ~ .cards #slide3 {
   box-shadow: 0 15px 35px 0 rgba(0, 0, 0, 45%);
-  transform: translate3d(85%, 0, -280px);
+  transform: translate3d(80%, 0, -280px);
   --current-color1: #eceaed;
   --current-color2: #404457;
   --display: none;
@@ -198,9 +208,9 @@ input {
   --display: none;
 }
 
-/* @media (max-width: 1300px) {
- 
-} */
+.projects-wrap-mobile {
+  display: none;
+}
 
 @media (max-width: 1550px) {
   .projects-wrap {
@@ -218,5 +228,209 @@ input {
 
   .website-description {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 1385px) {
+  .projects-wrap {
+    margin-top: 60px;
+  }
+
+  .cards {
+    height: 38vh;
+    width: 48vw;
+  }
+
+  .card .infos {
+    left: -450px;
+  }
+
+  .website-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .projects-wrap {
+    margin-top: 75px;
+  }
+
+  .cards {
+    margin-left: 164px;
+  }
+
+  .card .infos {
+    left: -400px;
+    max-width: 370px;
+  }
+
+  .cards {
+    height: 38vh;
+    width: 40vw;
+  }
+}
+
+@media (max-width: 1020px) {
+  .projects-container {
+    height: 90vh;
+  }
+
+  .cards {
+    margin-left: 0px;
+    height: 37vh;
+    width: 35vw;
+  }
+
+  .cards label {
+    height: 70%;
+  }
+
+  .card .infos {
+    left: 20px;
+    top: 170%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 770px) {
+  .projects-container {
+    height: 100vh;
+  }
+
+  .card .infos {
+    top: 190%;
+    left: 0;
+  }
+}
+
+@media (max-width: 630px) {
+  .projects-wrap {
+    margin-top: 10px;
+  }
+  .card .infos {
+    top: 180%;
+    right: -100px;
+    max-width: 700px;
+  }
+
+  .website-description {
+    margin-bottom: 15px;
+  }
+
+  .infos h3.name {
+    font-size: 18px;
+  }
+
+  .infos .tech {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 539px) {
+  .projects-container {
+    padding: 0;
+    height: unset;
+    /* height: 100vh; */
+  }
+
+  .projects-wrap-mobile::-webkit-scrollbar {
+    display: none;
+  }
+
+  .projects-container h2 {
+    font-size: 40px;
+    padding: 30px 0;
+  }
+
+  .arrow-btn {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 51%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .arrow-btn svg {
+    height: 45px;
+    width: 25px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s linear;
+    padding: 0 8px;
+  }
+
+  .arrow-btn i:hover {
+    color: rgb(189, 189, 189);
+  }
+
+  .projects-wrap-mobile {
+    width: 100%;
+    height: 100%;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+
+  .projects-wrap-mobile .mobile-card {
+    min-width: 100%;
+    height: 560px;
+    scroll-snap-align: center;
+  }
+
+  .projects-wrap {
+    display: none;
+  }
+
+  .projects-wrap-mobile img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+  }
+
+  .projects-wrap-mobile .infos {
+    padding: 0 15px 15px;
+    margin-bottom: 30px;
+  }
+
+  .projects-wrap-mobile .infos .name {
+    color: rgb(199, 104, 104);
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .projects-wrap-mobile .infos p {
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  .projects-wrap-mobile .infos a {
+    text-decoration: none;
+    color: #e9e9ee;
+    margin-right: 8px;
+    padding: 7px 15px;
+    border: 2px solid #e9e9ee;
+  }
+
+  .link-btns {
+    text-align: center;
+  }
+
+  .tech {
+    text-align: center;
+  }
+}
+
+@media (max-width: 410px) {
+  .projects-container h2 {
+    font-size: 30px;
+  }
+
+  .projects-wrap-mobile .infos p {
+    font-size: 14px;
   }
 }

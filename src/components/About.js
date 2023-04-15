@@ -12,6 +12,10 @@ const About = () => {
         .querySelector(".projects-wrap")
         .getBoundingClientRect().top;
 
+      const projectsTitle = document
+        .querySelector(".projects-title")
+        .getBoundingClientRect().top;
+
       if (about < triggerBottom) {
         document.querySelector(".about-title").classList.add("show");
       } else {
@@ -22,6 +26,12 @@ const About = () => {
         document.querySelector(".projects-wrap").classList.add("show");
       } else {
         document.querySelector(".projects-wrap").classList.remove("show");
+      }
+
+      if (projectsTitle < triggerBottom) {
+        document.querySelector(".projects-title").classList.add("show");
+      } else {
+        document.querySelector(".projects-title").classList.remove("show");
       }
     };
 
