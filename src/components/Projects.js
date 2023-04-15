@@ -21,7 +21,6 @@ const Projects = () => {
           />
           <input type="radio" name="slider" className="d-none" id="s2" />
           <input type="radio" name="slider" className="d-none" id="s3" />
-          <input type="radio" name="slider" className="d-none" id="s4" />
 
           <div className="cards">
             <label htmlFor="s1" id="slide1">
@@ -91,8 +90,9 @@ const Projects = () => {
                   <h3 className="name">Weather Forecast Website</h3>
                   <p className="website-description">
                     Weather forecast app uses OpenWeatherMap API to get weather
-                    data for any location you search for. Background images
-                    change depending on weather conditions.
+                    data for any location you search for. It automatically gets
+                    your current location and time when the page is loaded.
+                    Background images change depending on weather conditions.
                   </p>
                   <div className="tech">
                     <span>JAVASCRIPT</span>
@@ -112,36 +112,6 @@ const Projects = () => {
                     href="https://github.com/Dovile234/weather-forecast.git"
                   >
                     <FaGithub style={{ fontSize: "20px" }} />
-                    Code
-                  </a>
-                </div>
-              </div>
-            </label>
-
-            <label htmlFor="s4" id="slide4">
-              <div className="card">
-                <div className="image">
-                  <img src={ecommerce} alt="website" />
-                </div>
-                <div className="infos">
-                  <h3 className="name">Exercise website</h3>
-                  <p className="website-description">
-                    Weather forecast app uses OpenWeatherMap API to get weather
-                    data for any location you search for. Background images
-                    change depending on weather conditions.
-                  </p>
-                  <div className="tech">
-                    <span>REACT</span>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                  </div>
-                  <a target="blank" href="https://furninatur.netlify.app/">
-                    Live
-                  </a>
-                  <a
-                    target="blank"
-                    href="https://github.com/Dovile234/ecommerce-website.git"
-                  >
                     Code
                   </a>
                 </div>

@@ -61,11 +61,11 @@ const Intro = () => {
           <div className="vl"></div>
         </div>
       </div>
-      <a href="#link2" className="btn-down">
+      <a href="#link" className="btn-down">
         <MdOutlineArrowForwardIos />
       </a>
 
-      <div id="link2" className="curve">
+      <div className="curve">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"

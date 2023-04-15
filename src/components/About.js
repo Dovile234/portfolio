@@ -1,35 +1,31 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const About = () => {
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
-
-  useEffect(() => {
-    function handleWindowResize() {
-      setWindowSize(window.innerWidth);
-    }
-
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, [windowSize]);
-
   window.addEventListener("scroll", () => {
-    let value = window.scrollY;
+    const handleWindowSize = () => {
+      const triggerBottom = (window.innerHeight / 5) * 4;
+      const about = document
+        .querySelector(".about-title")
+        .getBoundingClientRect().top;
 
-    if (windowSize > 1760) {
-      document.querySelector(".about-title").style.left =
-        value < 670 ? (value - 400) * 0.6 + "px" : "140px";
-    } else if (windowSize > 1470) {
-      document.querySelector(".about-title").style.left =
-        value < 670 ? (value - 300) * 0.4 + "px" : "130px";
-    } else if (windowSize > 1240) {
-      document.querySelector(".about-title").style.left =
-        value < 640 ? (value - 300) * 0.2 + "px" : "60px";
-    } else {
-      document.querySelector(".about-title").style.position = "unset";
-    }
+      const projects = document
+        .querySelector(".projects-wrap")
+        .getBoundingClientRect().top;
+
+      if (about < triggerBottom) {
+        document.querySelector(".about-title").classList.add("show");
+      } else {
+        document.querySelector(".about-title").classList.remove("show");
+      }
+
+      if (projects < triggerBottom) {
+        document.querySelector(".projects-wrap").classList.add("show");
+      } else {
+        document.querySelector(".projects-wrap").classList.remove("show");
+      }
+    };
+
+    handleWindowSize();
   });
   return (
     <section className="about">
