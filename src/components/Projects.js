@@ -44,9 +44,10 @@ const Projects = () => {
                 <div className="infos">
                   <h3 className="name">Music Player</h3>
                   <p className="website-description">
-                    This is a web aplication, that lets users play music, browse
-                    through multiple music genres and add favorite songs to
-                    their playlist. Favorites list was made using local storage.
+                    This is a web application, that lets users play music,
+                    browse through multiple music genres and add favorite songs
+                    to their playlist. Favorites list was made using local
+                    storage.
                   </p>
                   <div className="tech">
                     <span>REACT</span>
@@ -152,7 +153,7 @@ const Projects = () => {
           <div className="infos">
             <h3 className="name">Music Player</h3>
             <p className="website-description">
-              This is a web aplication, that lets users play music, browse
+              This is a web application, that lets users play music, browse
               through multiple music genres and add favorite songs to their
               playlist. Favorites list was made using local storage.
             </p>

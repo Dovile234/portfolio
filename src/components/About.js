@@ -44,7 +44,7 @@ const About = () => {
       <div className="text-wrap">
         <p>
           I am a Front-End Developer with a passion for creating beautiful and
-          functional websites. I recently completed the front-end courses on
+          functional websites. I recently completed the front-end course on
           CodeAcademy and discovered that programming makes me truly happy.
         </p>
         <p>
