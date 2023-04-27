@@ -343,7 +343,6 @@ input {
   .projects-container {
     padding: 0;
     height: unset;
-    /* height: 100vh; */
   }
 
   .projects-wrap-mobile::-webkit-scrollbar {
@@ -359,7 +358,7 @@ input {
     display: block;
     width: 100%;
     position: absolute;
-    top: 51%;
+    top: 38%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
@@ -391,7 +390,6 @@ input {
 
   .projects-wrap-mobile .mobile-card {
     min-width: 100%;
-    height: 560px;
     scroll-snap-align: center;
   }
 
@@ -401,8 +399,9 @@ input {
 
   .projects-wrap-mobile img {
     width: 100%;
-    height: 230px;
+    height: 260px;
     object-fit: cover;
+    object-position: 50% -62%;
   }
 
   .projects-wrap-mobile .infos {
@@ -430,7 +429,15 @@ input {
   }
 
   .link-btns {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .link-btns a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
   }
 
   .tech {

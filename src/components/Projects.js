@@ -55,12 +55,15 @@ const Projects = () => {
                     <span>CSS</span>
                   </div>
                   <a target="blank" href="https://tuneflow.netlify.app/">
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                     Live
                   </a>
                   <a
                     target="blank"
+                    className="github"
                     href="https://github.com/Dovile234/music-player.git"
                   >
+                    <FaGithub style={{ fontSize: "20px" }} />
                     Code
                   </a>
                 </div>
@@ -83,12 +86,15 @@ const Projects = () => {
                     <span>CSS</span>
                   </div>
                   <a target="blank" href="https://furninatur.netlify.app/">
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                     Live
                   </a>
                   <a
                     target="blank"
+                    className="github"
                     href="https://github.com/Dovile234/ecommerce-website.git"
                   >
+                    <FaGithub style={{ fontSize: "20px" }} />
                     Code
                   </a>
                 </div>
@@ -164,12 +170,17 @@ const Projects = () => {
             </div>
             <div className="link-btns">
               <a target="blank" href="https://tuneflow.netlify.app/">
+                <FontAwesomeIcon
+                  icon={faArrowUpRightFromSquare}
+                  style={{ marginRight: "7px" }}
+                />
                 Live
               </a>
               <a
                 target="blank"
                 href="https://github.com/Dovile234/music-player.git"
               >
+                <FaGithub style={{ fontSize: "20px", marginRight: "7px" }} />
                 Code
               </a>
             </div>
@@ -178,11 +189,10 @@ const Projects = () => {
         <div className="mobile-card">
           <img src={ecommerce} alt="website" />
           <div className="infos">
-            <h3 className="name">Music Player</h3>
+            <h3 className="name">E-commerse website</h3>
             <p className="website-description">
-              This is a web aplication, that lets users play music, browse
-              through multiple music genres and add favorite songs to their
-              playlist. Favorites list was made using local storage.
+              It is an online store that allows buyers to browse through
+              multiple categories and add products to cart.
             </p>
             <div className="tech">
               <span>REACT</span>
@@ -190,13 +200,18 @@ const Projects = () => {
               <span>CSS</span>
             </div>
             <div className="link-btns">
-              <a target="blank" href="https://tuneflow.netlify.app/">
+              <a target="blank" href="https://furninatur.netlify.app/">
+                <FontAwesomeIcon
+                  icon={faArrowUpRightFromSquare}
+                  style={{ marginRight: "7px" }}
+                />
                 Live
               </a>
               <a
                 target="blank"
-                href="https://github.com/Dovile234/music-player.git"
+                href="https://github.com/Dovile234/ecommerce-website.git"
               >
+                <FaGithub style={{ fontSize: "20px", marginRight: "7px" }} />
                 Code
               </a>
             </div>
@@ -205,25 +220,35 @@ const Projects = () => {
         <div className="mobile-card">
           <img src={weather} alt="website" />
           <div className="infos">
-            <h3 className="name">Music Player</h3>
+            <h3 className="name">Weather Forecast Website</h3>
             <p className="website-description">
-              This is a web aplication, that lets users play music, browse
-              through multiple music genres and add favorite songs to their
-              playlist. Favorites list was made using local storage.
+              Weather forecast app uses OpenWeatherMap API to get weather data
+              for any location you search for. It automatically gets your
+              current location and time when the page is loaded. Background
+              images change depending on weather conditions.
             </p>
             <div className="tech">
-              <span>REACT</span>
+              <span>JAVASCRIPT</span>
               <span>HTML</span>
               <span>CSS</span>
             </div>
             <div className="link-btns">
-              <a target="blank" href="https://tuneflow.netlify.app/">
+              <a
+                target="blank"
+                href="https://dovile234.github.io/weather-forecast/"
+              >
+                <FontAwesomeIcon
+                  icon={faArrowUpRightFromSquare}
+                  style={{ marginRight: "7px" }}
+                />
                 Live
               </a>
               <a
                 target="blank"
-                href="https://github.com/Dovile234/music-player.git"
+                className="github"
+                href="https://github.com/Dovile234/weather-forecast.git"
               >
+                <FaGithub style={{ fontSize: "20px", marginRight: "7px" }} />
                 Code
               </a>
             </div>

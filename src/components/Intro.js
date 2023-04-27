@@ -7,6 +7,7 @@ import scss from "../assets/icons/scss.png";
 import github from "../assets/icons/github.png";
 import netlify from "../assets/icons/netlify.png";
 import bootstrap from "../assets/icons/bootstrap.png";
+import git from "../assets/icons/git.png";
 import { FaFacebook, FaGithub } from "react-icons/fa";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
@@ -33,6 +34,7 @@ const Intro = () => {
             <img className="icon" src={scss} alt="scss" title="scss" />
             <img className="icon" src={github} alt="github" title="github" />
             <img className="icon" src={netlify} alt="netlify" title="netlify" />
+            <img className="icon" src={git} alt="git" title="git" />
             <img
               className="icon"
               src={bootstrap}
